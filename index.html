@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portail Applications</title>
+<link rel="icon" href="icones/icone.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#003C75">
+<link rel="apple-touch-icon" href="icones/apple-touch-icon.png">
 
 <style>
 * {
@@ -86,6 +90,28 @@ h1 {
 .repliable:hover {
     background-color: #6d28d9;
 }
+
+.installer {
+    display: block;
+    margin: 24px auto 0;
+    padding: 8px 18px;
+    background: white;
+    color: #003C75;
+    border: 2px solid #003C75;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.installer:hover {
+    background: #003C75;
+    color: white;
+}
+
+.installer[hidden] {
+    display: none;
+}
 </style>
 </head>
 
@@ -117,7 +143,13 @@ h1 {
        target="_blank">
         Config Repliable
     </a>
+
+    <button type="button" id="btn-installer" class="installer" hidden>
+        Installer le portail
+    </button>
 </div>
+
+<script src="js/pwa.js"></script>
 
 </body>
 </html>
