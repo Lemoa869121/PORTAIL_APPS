@@ -20,7 +20,8 @@ jobs:
     - name: Prepare site
       run: |
         mkdir -p dist
-        cp index.html dist/
+        cp index.html manifest.webmanifest sw.js dist/
+        cp -r js icones dist/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
