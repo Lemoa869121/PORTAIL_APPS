@@ -3,7 +3,7 @@
   "short_name": "Portail Forster",
   "description": "Page d'accueil des applications Forster.",
   "lang": "fr",
-  "id": "./index.html",
+  "id": "/PORTAIL_APPS/",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
