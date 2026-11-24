@@ -2,7 +2,7 @@
    Stratégie « réseau d'abord » : en ligne, toujours la dernière version publiée ;
    hors ligne, la dernière copie gardée. Les applications ouvertes par les boutons
    (autres adresses) ne sont jamais interceptées. */
-const CACHE = 'portail-v1';
+const CACHE = 'portail-v2';
 const FICHIERS = [
   './', 'index.html', 'manifest.webmanifest', 'js/pwa.js',
   'icones/icone.svg', 'icones/icone-192.png', 'icones/icone-512.png',
